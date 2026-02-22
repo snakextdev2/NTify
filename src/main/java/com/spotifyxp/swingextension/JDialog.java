@@ -24,9 +24,15 @@ import javax.imageio.ImageIO;
 import java.io.IOException;
 
 public class JDialog extends javax.swing.JDialog {
-    public JDialog() throws IOException {
+    public JDialog() { // Removed IOException from signature as ImageIO.read is no longer used directly
         super(ContentPanel.frame);
-        setIconImage(ImageIO.read(Initiator.class.getResourceAsStream("/ntify.png")));
+        try {
+            setIconImage(PublicValues.appIcon);
+        } catch (Exception e) {
+            // Log or handle the exception if PublicValues.appIcon fails to load or is null
+            // For now, we'll just catch it to prevent crashing.
+            // A more robust solution might involve a default icon or logging.
+        }
     }
 
     public void pack() {

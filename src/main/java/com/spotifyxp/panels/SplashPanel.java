@@ -69,9 +69,8 @@ public class SplashPanel {
         JImagePanel image = new JImagePanel();
         linfo = new JLabel("Please wait...");
         try {
-            BufferedImage img = ImageIO.read(getClass().getResourceAsStream("/ntify.png"));
-            image.setImage(img);
-            frame.setIconImage(img);
+            image.setImage(PublicValues.appIcon);
+            frame.setIconImage(PublicValues.appIcon);
         } catch (Exception e) {
             ConsoleLogging.Throwable(e);
             if (PublicValues.config.getString(ConfigValues.hideExceptions.name).equals("false")) {

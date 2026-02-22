@@ -117,6 +117,7 @@ public class PublicValues {
     public static LogPrintStream logPrintStream;
     public static boolean userFocusedInputField = false;
     public static Cache cache;
+    public static java.awt.image.BufferedImage appIcon;
     //Devstuff
     public static boolean locationFinderActive = false;
     //----

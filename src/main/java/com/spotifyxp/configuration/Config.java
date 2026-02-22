@@ -160,18 +160,25 @@ public class Config {
     public void write(String name, Object value) {
         if (value instanceof Boolean) {
             properties.addProperty(name, (Boolean) value);
+            modifiedAtRuntime.addProperty(name, (Boolean) value);
         } else if (value instanceof String) {
             properties.addProperty(name, (String) value);
+            modifiedAtRuntime.addProperty(name, (String) value);
         } else if (value instanceof Integer) {
             properties.addProperty(name, (Integer) value);
+            modifiedAtRuntime.addProperty(name, (Integer) value);
         } else if (value instanceof Double) {
             properties.addProperty(name, (Double) value);
+            modifiedAtRuntime.addProperty(name, (Double) value);
         } else if (value instanceof Float) {
             properties.addProperty(name, (Float) value);
+            modifiedAtRuntime.addProperty(name, (Float) value);
         } else if (value instanceof Long) {
             properties.addProperty(name, (Long) value);
+            modifiedAtRuntime.addProperty(name, (Long) value);
         } else if (value instanceof Character) {
             properties.addProperty(name, (Character) value);
+            modifiedAtRuntime.addProperty(name, (Character) value);
         }
     }
 

@@ -68,6 +68,7 @@ public class Initiator {
 
     public static void main(String[] args) {
         try {
+            PublicValues.appIcon = javax.imageio.ImageIO.read(Initiator.class.getResourceAsStream("/ntify.png"));
             PublicValues.argParser.parseArguments(args); //Parsing the arguments
             initEvents(); //Initializing the event support
             new SplashPanel().show(); //Initializing the splash panel

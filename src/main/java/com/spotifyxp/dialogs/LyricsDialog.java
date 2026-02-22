@@ -82,7 +82,7 @@ public class LyricsDialog extends JDialog {
                     }
                 });
                 try {
-                    setIconImage(ImageIO.read(Initiator.class.getResourceAsStream("/ntify.png")));
+                    setIconImage(PublicValues.appIcon);
                 } catch (Exception e) {
                     ConsoleLogging.Throwable(e);
                     if (PublicValues.config.getString(ConfigValues.hideExceptions.name).equals("false")) {

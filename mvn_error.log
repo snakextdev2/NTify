@@ -1,0 +1,87 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: windows
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.bitness: 64
+[INFO] os.detected.version: 10.0
+[INFO] os.detected.version.major: 10
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.classifier: windows-x86_64
+[INFO] 
+[INFO] ------------------------< de.werwolf2303:NTify >------------------------
+[INFO] Building NTify Nightly
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- protobuf:0.6.1:compile (default) @ NTify ---
+[INFO] Compiling 40 proto file(s) to C:\Users\AISTV-PREMIUM\Downloads\NTify-developer\src\main\java
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ NTify ---
+[INFO] Copying 78 resources from src\main\resources to target\classes
+[INFO] Copying 40 resources from src\main\proto to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ NTify ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 833 source files with javac [forked debug target 1.8] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] [options] bootstrap class path not set in conjunction with -source 8
+[WARNING] C:\Users\AISTV-PREMIUM\Downloads\NTify-developer\src\main\java\com\spotifyxp\deps\uk\co\caprica\vlcj\player\MediaPlayerFactory.java:[25,20] [removal] AccessController in java.security has been deprecated and marked for removal
+[WARNING] C:\Users\AISTV-PREMIUM\Downloads\NTify-developer\src\main\java\com\spotifyxp\deps\uk\co\caprica\vlcj\player\MediaPlayerFactory.java:[154,16] [removal] AccessController in java.security has been deprecated and marked for removal
+[WARNING] C:\Users\AISTV-PREMIUM\Downloads\NTify-developer\src\main\java\com\spotifyxp\deps\xyz\gianlu\librespot\common\NameThreadFactory.java:[33,8] [removal] SecurityManager in java.lang has been deprecated and marked for removal
+[WARNING] C:\Users\AISTV-PREMIUM\Downloads\NTify-developer\src\main\java\com\spotifyxp\deps\xyz\gianlu\librespot\common\NameThreadFactory.java:[33,34] [removal] getSecurityManager() in System has been deprecated and marked for removal
+[INFO] 5 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] C:\Users\AISTV-PREMIUM\Downloads\NTify-developer\src\main\java\com\spotifyxp\panels\SplashPanel.java:[72,17] error: no suitable method found for setImage(Image)
+    method JImagePanel.setImage(String) is not applicable
+      (argument mismatch; Image cannot be converted to String)
+    method JImagePanel.setImage(BufferedImage) is not applicable
+      (argument mismatch; Image cannot be converted to BufferedImage)
+    method JImagePanel.setImage(File) is not applicable
+      (argument mismatch; Image cannot be converted to File)
+    method JImagePanel.setImage(byte[]) is not applicable
+      (argument mismatch; Image cannot be converted to byte[])
+    method JImagePanel.setImage(SVGImageRecalculate) is not applicable
+      (argument mismatch; Image cannot be converted to SVGImageRecalculate)
+    method JImagePanel.setImage(URL) is not applicable
+      (argument mismatch; Image cannot be converted to URL)
+    method JImagePanel.setImage(InputStream) is not applicable
+      (argument mismatch; Image cannot be converted to InputStream)
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  42.296 s
+[INFO] Finished at: 2026-02-22T21:30:15Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project NTify: Compilation failure
+[ERROR] C:\Users\AISTV-PREMIUM\Downloads\NTify-developer\src\main\java\com\spotifyxp\panels\SplashPanel.java:[72,17] error: no suitable method found for setImage(Image)
+[ERROR]     method JImagePanel.setImage(String) is not applicable
+[ERROR]       (argument mismatch; Image cannot be converted to String)
+[ERROR]     method JImagePanel.setImage(BufferedImage) is not applicable
+[ERROR]       (argument mismatch; Image cannot be converted to BufferedImage)
+[ERROR]     method JImagePanel.setImage(File) is not applicable
+[ERROR]       (argument mismatch; Image cannot be converted to File)
+[ERROR]     method JImagePanel.setImage(byte[]) is not applicable
+[ERROR]       (argument mismatch; Image cannot be converted to byte[])
+[ERROR]     method JImagePanel.setImage(SVGImageRecalculate) is not applicable
+[ERROR]       (argument mismatch; Image cannot be converted to SVGImageRecalculate)
+[ERROR]     method JImagePanel.setImage(URL) is not applicable
+[ERROR]       (argument mismatch; Image cannot be converted to URL)
+[ERROR]     method JImagePanel.setImage(InputStream) is not applicable
+[ERROR]       (argument mismatch; Image cannot be converted to InputStream)
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

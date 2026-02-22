@@ -46,7 +46,7 @@ public class BackgroundService {
         }
         try {
             trayDialog = new SystemTrayDialog();
-            trayDialog.add(new ImageIcon(ImageIO.read(Initiator.class.getResourceAsStream("/ntify.png"))), ApplicationUtils.getName());
+            trayDialog.add(new ImageIcon(PublicValues.appIcon), ApplicationUtils.getName());
             trayDialog.open(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
